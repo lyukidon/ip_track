@@ -31,3 +31,9 @@ async function getLocation() {
 }
 
 submitBox.addEventListener('click',getLocation)
+searchBox.addEventListener('keypress',function(e){
+    if (e.keyCode === 13){
+        console.log('hi')
+        getLocation();
+    }
+})
