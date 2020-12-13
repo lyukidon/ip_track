@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+</head>
+<body>
+  <div id = 'high'>
+      <div id='title'>
+        IP Address Tracker
+      </div>
+      <div id='space1'></div>
+      <div id="search">
+          <input type="text" id="searchBox" placeholder="Search for any IP address or domain"><input type="submit" id="submitBox" value=">">
+      </div>
+      <div id = 'space2'></div>
+      <div id="info">
+          <div class="inlineBlock infoBoxes">
+            <h5 class="fontGrey">IP Address</h5>
+            <h4 id = 'ipAddress'></h4>
+          </div>
+          <div class="inlineBlock infoBoxes">
+            <h5 class="fontGrey">Location</h5>
+            <h4 id ='location'></h4>
+          </div>
+          <div class="inlineBlock infoBoxes">
+            <h5 class="fontGrey">Timezone</h5>
+            <h4 id = 'time'></h4>
+          </div>
+          <div class="inlineBlock infoBoxes" id = 'lastInfoBox'>
+            <h5 class="fontGrey">ISP</h5>
+            <h4 id = 'isp'></h4>
+          </div>
+      </div>
+  </div>
+
+  <div id="mapid"></div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
